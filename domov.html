@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Manažerské konto</title>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="top-left">
+                <img class="icon" src="/images/online_icon.png"><a id="online"class="top-left-link" href="/cs/online.html">Online: 238</a><img class="icon" src="/images/time_icon.png"><span id="clock">Čas: 14:05:00</span>
+                <a href="https://ppm.powerplaymanager.com/cs/"><img class="logo-m icon" src="/images/powerplay_manager_logo.png"></a>
+            </div>
+            <div class="top-right">
+                <div class="search">
+                    <input type="text" placeholder="Hledej...">
+                    <img src="/images/button_search.png">
+                </div>
+                <div class="sports-nav">
+                    <a href="https://ppm.powerplaymanager.com/cs/domov.html"><img class="sport" src="/images/top_ppm_icon_selected.png"></a>
+                    <a id="sn-hockey" href="https://hockey.powerplaymanager.com/cs/hokejove-novinky.html"><img class="sport" src="/images/top_hockey_icon.png"></a>
+                    <a id="sn-football" href="https://soccer.powerplaymanager.com/cs/fotbalove-novinky.html"><img class="sport" src="/images/top_soccer_icon.png"></a>
+                    <a id="sn-handball" href="https://handball.powerplaymanager.com/cs/hazenkarske-novinky.html"><img class="sport" src="/images/top_handball_icon.png"></a>
+                    <a id="sn-basketball" href="https://basketball.powerplaymanager.com/cs/basketbalove-novinky.html"><img class="sport" src="/images/top_basketball_icon.png"></a>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <div class="logo">
+                <a href="https://ppm.powerplaymanager.com/cs/"><img src="/images/powerplay_manager_logo.png"></a>
+            </div>
+            <div class="info-main">
+                <div class="info-teams">
+                    <div>
+                        <p id="my-teams-title">Tvé týmy:</p>
+                        <p id="my-teams"><a href="https://hockey.powerplaymanager.com/cs/hokejove-novinky.html" title="HC Kosatky Chotěbuz (Hokej)"><img src="/images/top_sport_icon_hockey.png"></a></p>
+                        <p id="create-teams-title">Vytvoř si další týmy:</p>
+                        <p id="create-teams">
+                            <a href="https://ppm.powerplaymanager.com/cs/vytvorit-tym.html?data=soccer" title="Vytvoř si fotbalový tým!"><img src="/images/top_sport_icon_soccer.png"></a>
+                            <a href="https://ppm.powerplaymanager.com/cs/vytvorit-tym.html?data=handball" title="Vytvoř si házenkařský tým!"><img src="/images/top_sport_icon_handball.png"></a>
+                            <a href="https://ppm.powerplaymanager.com/cs/vytvorit-tym.html?data=basketball" title="Vytvoř si basketbalový tým!"><img src="/images/top_sport_icon_basketball.png"></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="info-comunication">
+                    <div class="info-vertical-line"></div>
+                    <img class="info-icon" src="/images/communication_menu.png">
+                    <button class="info-btn" id="info-comunication-btn">Komunikace<svg class="info-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569z"/></svg></button>
+                    <ul class="info-list" id="info-comunication-list">
+                        <li><a class="info-list-link" href="https://ppm.powerplaymanager.com/cs/posta.html">Pošta</a></li>
+                        <li><a class="info-list-link" href="https://ppm.powerplaymanager.com/cs/notifikace.html">Notifikace</a></li>
+                        <li><a class="info-list-link" href="https://ppm.powerplaymanager.com/cs/diskuze.html?data=ppm">Diskuze</a></li>
+                        <li><a class="info-list-link" href="https://ppm.powerplaymanager.com/cs/flash-chat.html?data=ppm">Flashchat</a></li>
+                    </ul>
+                </div>
+                <div class="info-profile">
+                    <img class="info-icon" src="/images/user_menu.png">
+                    <button class="info-btn" id="info-profile-btn"><span id="profile-name">Filiposis</span><svg class="info-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569z"/></svg></button>
+                    <ul class="info-list" id="info-profile-list">
+                        <li><a id="profile-link" class="info-list-link" href="">Profil</a></li>
+                        <li><a class="info-list-link" href="https://ppm.powerplaymanager.com/cs/nastaveni.html">Nastavení</a></li>
+                        <li><a class="info-list-link" href="https://www.powerplaymanager.com/action/action_ams_user_logout.php?lng=cs">Odhlásit</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pro-zone">
+               <p class="pro-zone-title"><img src="/images/pro_icon.png"> PRO Zona </p> 
+               <p><span id="credits">17</span> kreditů</p>
+               <p>Koupit kredity</p>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="main-nav-list">
+                <li><a href="" class="main-nav-list-link">Domů</a></li>
+                <li><a href="" class="main-nav-list-link">Sporty</a></li>
+                <li><a href="" class="main-nav-list-link">PP Magazín</a></li>
+                <li id="main-nav-informace"><a class="main-nav-list-link" >Informace</a>
+                    <ul class="secondary-nav-list" id="nav-list-informace">
+                        <li><a href="" class="secondary-nav-list-link">Statistiky</a></li>
+                        <li><a href="" class="secondary-nav-list-link">Návod</a></li>
+                        <li><a href="" class="secondary-nav-list-link">FAQ</a></li>
+                        <li><a href="" class="secondary-nav-list-link">Pravidla</a></li>
+                        <li><a href="" class="secondary-nav-list-link">Obchodní podmínky</a></li>
+                        <li><a href="" class="secondary-nav-list-link">Tresty</a></li>
+                        <li><a href="" class="secondary-nav-list-link">PPM tým</a></li>
+                        <li><a href="" class="secondary-nav-list-link">Pomocníci</a></li>
+                        <li><a href="" class="secondary-nav-list-link">Kontakt</a></li>
+                    </ul>
+                </li>
+                <li id="main-nav-komunita"><a class="main-nav-list-link" >Komunita</a>
+                    <ul class="secondary-nav-list" id="nav-list-komunita">
+                        <li><a href="" class="secondary-nav-list-link">Přátelé</a></li>
+                        <li><a href="" class="secondary-nav-list-link">Diskuze</a></li>
+                        <li><a href="" class="secondary-nav-list-link">Propagace</a></li>
+                        <li><a href="" class="secondary-nav-list-link">Facebook</a></li>
+                        <li><a href="" class="secondary-nav-list-link">Online</a></li>
+                        <li><a href="" class="secondary-nav-list-link">Noví manažeři</a></li>
+                        <li><a href="" class="secondary-nav-list-link">Srazy</a></li>
+                        <li><a href="" class="secondary-nav-list-link">TopArt</a></li>
+                    </ul>
+                </li>               
+                <div class="secondary-nav-fill" id="secondary-nav-fill">Přidej se k nám na Facobooku</div>
+            </ul>
+        </nav>
+        <div class="main">
+            <h1><img src="/images/icon_home.png">Manažerské konto</h1>
+            <div class="main-grid">
+                <div class="main-teams">
+                    <div class="main-teams-hockey">
+                        <h3 class="main-teams-sport">Hokej</h3>
+                        <p class="main-teams-action"><img class="main-teams-action-icon" src="/images/sport_play.png"><span id="hockey-action">Vstup do týmu</span></p>
+                        <p class="main-teams-name" id="hockey-name">HC Kosatky Chotěbuz</p>
+                    </div>
+                    <div class="main-teams-football">
+                        <h3 class="main-teams-sport">Fotbal</h3>
+                        <p class="main-teams-action"><img class="main-teams-action-icon" src="/images/sport_play.png"><span id="football-action">Vytvoř si tým!</span></p>
+                        <p class="main-teams-name" id="football-name">Nemáš tým</p>
+                    </div>
+                    <div class="main-teams-handball">
+                        <h3 class="main-teams-sport">Házená</h3>
+                        <p class="main-teams-action"><img class="main-teams-action-icon" src="/images/sport_play.png"><span id="handball-action">Vytvoř si tým!</span></p>
+                        <p class="main-teams-name" id="handball-name">Nemáš tým</p>
+                    </div>
+                    <div class="main-teams-basketball">
+                        <h3 class="main-teams-sport">Basketbal</h3>
+                        <p class="main-teams-action"><img class="main-teams-action-icon" src="/images/sport_play.png"><span id="basketball-action">Vytvoř si tým!</span></p>
+                        <p class="main-teams-name" id="basketball-name">Nemáš tým</p>
+                    </div>
+                </div>
+                <div class="main-news">
+                    <div class="white-box">
+                        <h2 >Poslední články na PPM</h2>
+                        <div class="article">
+                            <img class="article-img" src="/images/ppm_new.png">
+                            <div class="article-text">
+                                <p class="article-title"><a id="article-title-1">Nová sezóna klepe na dveře</a></p>
+                                <p class="article-footer" id="article-footer-1">PPM Novinka</p>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <img class="article-img" src="/images/ppm_new.png">
+                            <div class="article-text">
+                                <p class="article-title"><a id="article-title-2">Nová sezóna začíná v pondělí</a></p>
+                                <p class="article-footer" id="article-footer-2">PPM Novinka</p>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <img class="article-img" src="/images/ppm_new.png">
+                            <div class="article-text">
+                                <p class="article-title"><a id="article-title-3">Vánoční výzva</a></p>
+                                <p class="article-footer" id="article-footer-3">PPM Novinka</p>
+                            </div>
+                        </div>
+                        <button class="btn-main btn-main-small">Zobrazit více</button>
+                    </div>
+                    <div class="ads center">
+                        <strong>Reklama</strong>
+                        <button class="btn-main">Aktivuj si balík PRO a zbav se této reklamy</button>
+                    </div>
+                    <div class="white-box">
+                        <h2>Tvoje události na PPM</h2>
+                        <div class="event">
+                            <img class="event-img" src="/images/429836_thumb.jpg">
+                            <div class="event-main">
+                                <p class="event-text">Řekni ostatním</p>
+                                <div class="event-form">
+                                    <img class="event-icon" src="/images/wave_icon.png">
+                                    <input type="text">
+                                    <button class="btn-main">Řekni!</button>
+                                </div>
+                                <p class="event-special">Speciální značky</p>
+                            </div>
+                        </div>
+                        <div class="gray-box center">
+                            <p >Ani ty ani tvoji přátelé v poslední době nic zajímavého na PPM nedělali...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-right">
+                    <h2 class="h2-side">Pořadí zemí</h2>
+                    <div class="table-holder">
+                        <table>
+                            <tbody>
+                                <tr class="row-highlighted">
+                                    <td class="col-small">1</td>
+                                    <td class="col-flag"><img src="/images/cze.png"></td>
+                                    <td class="left"><a href="https://ppm.powerplaymanager.com/cs/statistiky.html?data=countries-01-ppm">Česká republika</a></td>
+                                    <td><a href="https://ppm.powerplaymanager.com/cs/statistiky.html?data=countries-01-ppm" id="czNum">114 399</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="col-small">2</td>
+                                    <td class="col-flag"><img src="/images/svk.png"></td>
+                                    <td class="left"><a href="https://ppm.powerplaymanager.com/cs/statistiky.html?data=countries-01-ppm">Slovensko</a></td>
+                                    <td><a href="https://ppm.powerplaymanager.com/cs/statistiky.html?data=countries-01-ppm" id="skNum">93 138</a></td>
+                                </tr>
+                                <tr class="row-odd">
+                                    <td class="col-small">3</td>
+                                    <td class="col-flag"><img src="/images/pol.png"></td>
+                                    <td class="left"><a href="https://ppm.powerplaymanager.com/cs/statistiky.html?data=countries-01-ppm">Polsko</a></td>
+                                    <td><a href="https://ppm.powerplaymanager.com/cs/statistiky.html?data=countries-01-ppm" id="plNum">92 229</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button class="btn-main"><a href="https://ppm.powerplaymanager.com/cs/propagace.html">Podpoř svoji zemi!</a></button>
+                    </div>
+                    <h2 class="h2-side">Tvé oblíbené diskuze</h2>
+                        <div class="table-holder table-holder-disc">
+                            <table>
+                                <tbody id="fav-dis">
+                                    <tr class="row-highlighted-dark">
+                                        <td class="col-flag left"><img src="/images/svk.png"></td>
+                                        <td class="col-small left"><img src="/images/hockey.gif"></td>
+                                        <td class="left"><a>Otázky a odpo...</a></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-flag left"><img src="/images/svk.png"></td>
+                                        <td class="col-small left"><img src="/images/hockey.gif"></td>
+                                        <td class="left"><a>I.1</a></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="row-odd">
+                                        <td class="col-flag left"><img src="/images/cze.png"></td>
+                                        <td class="col-small left"><img src="/images/hockey.gif"></td>
+                                        <td class="left"><a>I.1</a></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-flag left"><img src="/images/cze.png"></td>
+                                        <td class="col-small left"><img src="/images/hockey.gif"></td>
+                                        <td class="left"><a>U18 reprezent...</a></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="row-odd">
+                                        <td class="col-flag left"><img src="/images/cze.png"></td>
+                                        <td class="col-small left"><img src="/images/hockey.gif"></td>
+                                        <td class="left"><a>III.15</a></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-flag left"><img src="/images/cze.png"></td>
+                                        <td class="col-small left"><img src="/images/hockey.gif"></td>
+                                        <td class="left"><a>Dojmy z hraní...</a></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="row-highlighted-dark">
+                                        <td class="col-flag left"><img src="/images/cze.png"></td>
+                                        <td class="col-small left"><img src="/images/hockey.gif"></td>
+                                        <td class="left"><a>Otázky a odpo...</a></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-flag left"><img src="/images/cze.png"></td>
+                                        <td class="col-small left"><img src="/images/hockey.gif"></td>
+                                        <td class="left"><a>U20 reprezent...</a></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="row-odd">
+                                        <td class="col-flag left"><img src="/images/cze.png"></td>
+                                        <td class="col-small left"><img src="/images/hockey.gif"></td>
+                                        <td class="left"><a>PPM reprezent...</a></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-flag left"><img src="/images/cze.png"></td>
+                                        <td class="col-small left"><img src="/images/hockey.gif"></td>
+                                        <td class="left"><a>4-6 liga...</a></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h2 class="h2-side">Poslední příspěvky</h2>
+                        <div class="table-holder table-holder-disc">
+                            <table>
+                                <tbody id="last-dis">
+                                    <tr class="row-highlighted-dark">
+                                        <td class="col-flag left"><img src="/images/svk.png"></td>
+                                        <td class="col-small left"><img src="/images/hockey.gif"></td>
+                                        <td class="left"><a>Hlášení chyb</a></td>
+                                        <td class="right col-num-disc">(+3)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-flag left"><img src="/images/svk.png"></td>
+                                        <td class="col-small left"><img src="/images/hockey.gif"></td>
+                                        <td class="left"><a>Kšefty a od...</a></td>
+                                        <td class="right col-num-disc">(+907)</td>
+                                    </tr>
+                                    <tr class="row-odd">
+                                        <td class="col-flag left"><img src="/images/cze.png"></td>
+                                        <td class="col-small left"><img src="/images/hockey.gif"></td>
+                                        <td class="left"><a>II.4</a></td>
+                                        <td class="right col-num-disc">(+25)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-flag left"><img src="/images/cze.png"></td>
+                                        <td class="col-small left"><img src="/images/hockey.gif"></td>
+                                        <td class="left"><a>Nezahrajete...</a></td>
+                                        <td class="right col-num-disc">(+10)</td>
+                                    </tr>
+                                    <tr class="row-odd">
+                                        <td class="col-flag left"><img src="/images/cze.png"></td>
+                                        <td class="col-small left"><img src="/images/hockey.gif"></td>
+                                        <td class="left"><a>Juniorka 21</a></td>
+                                        <td class="right col-num-disc">(+464)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-flag left"><img src="/images/cze.png"></td>
+                                        <td class="col-small left"><img src="/images/hockey.gif"></td>
+                                        <td class="left"><a>III.2</a></td>
+                                        <td class="right col-num-disc red-new">NEW</td>
+                                    </tr>
+                                    <tr class="row-highlighted-dark">
+                                        <td class="col-flag left"><img src="/images/cze.png"></td>
+                                        <td class="col-small left"><img src="/images/general.gif"></td>
+                                        <td class="left"><a>Oceánie II</a></td>
+                                        <td class="right col-num-disc"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-flag left"><img src="/images/cze.png"></td>
+                                        <td class="col-small left"><img src="/images/hockey.gif"></td>
+                                        <td class="left"><a>I.1</a></td>
+                                        <td class="right col-num-disc"></td>
+                                    </tr>
+                                    <tr class="row-odd">
+                                        <td class="col-flag left"><img src="/images/cze.png"></td>
+                                        <td class="col-small left"><img src="/images/hockey.gif"></td>
+                                        <td class="left"><a>PPM pokec (...</a></td>
+                                        <td class="right col-num-disc">(+29)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-flag left"><img src="/images/cze.png"></td>
+                                        <td class="col-small left"><img src="/images/hockey.gif"></td>
+                                        <td class="left"><a>U18 reprezent...</a></td>
+                                        <td class="right col-num-disc"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                </div>
+                <div class="sidebar-left">
+                    <h2 class="h2-side">Oficiální stránka PPM na Facebooku</h2>
+                    <div class="fb-container table-holder table-holder-disc center">
+                        <img class="fb-img" src="/images/facebook.png">
+                        <p class="bold">Dej Like naší stránce na Facebooku a budeš informován o novinkách dříve než ostatní.</p>
+                        <iframe name="f469c8313828a445a" width="180px" height="75px" data-testid="fb:like_box Facebook Social Plugin" title="fb:like_box Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/plugins/like_box.php?app_id=132711430159663&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Dfeacc3ebd0c2cf751%26domain%3Dppm.powerplaymanager.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fppm.powerplaymanager.com%252Ff6599eea3fa7c4043%26relation%3Dparent.parent&amp;container_width=200&amp;header=true&amp;height=75&amp;href=https%3A%2F%2Fwww.facebook.com%2FPowerPlayManager&amp;locale=en_US&amp;sdk=joey&amp;show_faces=false&amp;stream=false&amp;width=190" class=""></iframe>
+                        
+                    </div>
+                    <h2 class="h2-side">Aplikace</h2>
+                    <div class="table-holder apps">
+                        <p class="bold"><img class="apps-img" src="/images/module_predictor_thumb.png">Tipovací soutěže</p>
+                        <p class="bold"><img class="apps-img" src="/images/module_livescore_thumb.png">Live výsledky</p>
+                    </div>
+                    <h2 class="h2-side">Partner dne</h2>
+                    <div class="table-holder">
+                        <img class="partner-img" src="/images/icon_partner.gif">
+                        <button class="btn-main">Doporučujeme</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-container table-holder">
+                <img class="footer-logo" src="/images/ppm_footer_logo.png">
+                <div class="footer-content">
+                    <p>Copyright © 2007-2025 - POWERPLAY MANAGER, s.r.o. - Všechna práva vyhrazena</p>
+                    <p><a class="footer-link">Kontakt</a> - <a class="footer-link">Ochrana a podmínky</a> - <a class="footer-link">Ochrana osobních údajů</a> - <a class="footer-link">Nastavení cookies</a> - <a class="footer-link">Mapa portálu</a></p>
+                    <p><a class="footer-link">Reklama na Powerplay manager</a> - <a class="footer-link">Staň se našim partnerem!</a></p>
+                    <p>Partneři: <a class="footer-link">www.tennismania.com</a> - <a class="footer-link">www.biathlonmania.com</a> - <a class="footer-link">www.skijumpmania3.com</a> - <a class="footer-link">www.athleticsmania.com</a> - <a class="footer-link">www.wintersportsmania.com</a> - <a class="footer-link">www.summersportsmania.com</a></p>
+                    <p>Server hosting zajišťuje společnost <a class="footer-link">VSHosting</a>.</p>
+                    <p><a class="footer-link">Práce pro Powerplay manager</a></p>
+                    <p>[all: 149ms / php: 37ms / db: 112ms ]</p>
+                    <p>Web server: WB2</p>
+                   
+                </div>
+            </div>
+        </footer>     
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

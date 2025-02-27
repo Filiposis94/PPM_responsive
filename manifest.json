@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "PPM Custom Home Page",
+    "version": "1.0",
+    "description": "Replaces the home page on PowerPlay Manager with a custom version.",
+    "host_permissions": [
+      "https://ppm.powerplaymanager.com/cs/domov.html"
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["domov.html", "style.css", "script.js", "images/*"],
+        "matches": ["https://ppm.powerplaymanager.com/*"]
+      }
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://ppm.powerplaymanager.com/cs/domov.html"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
